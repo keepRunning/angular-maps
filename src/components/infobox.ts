@@ -77,7 +77,7 @@ export class InfoBoxComponent implements OnDestroy, OnChanges, AfterViewInit {
      *
      * @memberof InfoBoxComponent
      */
-    @ViewChild('infoBoxContent') private _content: ElementRef;
+    @ViewChild('infoBoxContent', {static: false}) private _content: ElementRef;
 
     /**
      * Zero or more actions to show on the info window
